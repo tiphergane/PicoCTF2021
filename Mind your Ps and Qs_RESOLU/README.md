@@ -76,7 +76,7 @@ Ce qui donne le résultat suivant:
 
 ## 0x6 : Outro
 
-Pas très compliqué comme défi quand l'on a les bases sur lec challenges RSA,
+Pas très compliqué comme défi quand l'on a les bases sur les challenges RSA,
 mais c'était une occasion parfaite pour tester le module [chatonCTF](https://github.com/tiphergane/chatonCTF).
 
 ![chatonCTF en marche](./IMG/chatonCTF.png)
