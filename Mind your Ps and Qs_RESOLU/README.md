@@ -58,7 +58,7 @@ et finalement utiliser la clef privée pour déchiffrer le message:
 Bon, le message trouvé n'est pas très lisible comme cela, il faut l'avouer,
 mais nous pouvons le rendre lisible avec pwntools et unhex.
 
-Pour cela il faut d'abord transformer la réponse reçu en hexadécimale:
+Pour cela il faut d'abord transformer la réponse reçue en hexadécimale:
 
 ```python3 
 hexstr = hex(m)[2:]
