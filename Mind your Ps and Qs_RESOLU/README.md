@@ -23,7 +23,7 @@ On récupère les informations données dans le fichier Value:
 
 Nous avons le message chiffré (**c**) le modulus (**n**) et pour finir la clef publique (**e**)
 
-Pour déchiffrer le message, nous allons avoir besoin de la clef privée **d**, qui est calculable via $\phi$n
+Pour déchiffrer le message, nous allons avoir besoin de la clef privée **d**, qui est calculable via ![formula](https://render.githubusercontent.com/render/math?math=phi%28n%29)
 
 ## 0x3 : Factorisation
 
@@ -35,13 +35,13 @@ Qui nous donnes les informations suivantes:
 
 ## 0x4 : déchiffrement du message
 
-À partir de là, nous pouvons donc trouver $\phi$n selon le calcul suivant:
+À partir de là, nous pouvons donc trouver ![formula](https://render.githubusercontent.com/render/math?math=phi%28n%29) selon le calcul suivant:
 
-$\phi$n = (p-1) * (q-1)
+![formula](https://render.githubusercontent.com/render/math?math=phi%28n%29=%28p-1\%29*%28q-1\%29)
 
 puis calculer **d** :
 
-d = e<sup>-1</sup>mod($\phi$n)
+![formula](https://render.githubusercontent.com/render/math?math=d=e^{-1}mod%28phi%28n%29%29)
 
 Ou avec ChatonCTF avec l'option **rsaFindDfromPQ**:
 
@@ -51,7 +51,7 @@ chatonCTF.rsaFindDfromPhi(p,q,e)
 
 et finalement utiliser la clef privée pour déchiffrer le message:
 
-m = c<sup>d</sup>mod(n)
+![formula](https://render.githubusercontent.com/render/math?math=m=c^dmod%28n%29)
 
 ## 0x5 : Passage du message déchiffré en lisible
 
