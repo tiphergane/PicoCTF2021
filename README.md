@@ -11,7 +11,7 @@ pour ce challenge version 2021.
 # Web Exploitation
 
 * [GET aHEAD](https://github.com/tiphergane/PicoCTF2021/tree/main/GET%20aHEAD_RESOLU)
-* Cookies
+* [Cookies](https://github.com/tiphergane/PicoCTF2021/tree/main/Cookies_RESOLU)
 * Scavenger Hunt
 * Some Assembly Required 1
 * Some Assembly Required 2
