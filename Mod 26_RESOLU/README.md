@@ -24,4 +24,4 @@ Pour la ligne complète:
 
 Pour une selection visuelle:
 
->[selection visuel]g?
+>[selection visuelle]g?
