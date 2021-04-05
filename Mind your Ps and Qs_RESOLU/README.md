@@ -46,7 +46,7 @@ puis calculer **d** :
 Ou avec ChatonCTF avec l'option **rsaFindDfromPQ**:
 
 ```python
-chatonCTF.rsaFindDfromPhi(p,q,e)
+chatonCTF.rsaFindDfromPQ(p,q,e)
 ```
 
 et finalement utiliser la clef privée pour déchiffrer le message:
