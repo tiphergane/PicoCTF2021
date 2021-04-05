@@ -5,7 +5,7 @@ pour ce challenge version 2021.
 
 # Cryptography
 
-* Mod 26
+* [Mod 26](https://github.com/tiphergane/PicoCTF2021/tree/main/Mod%2026_RESOLU)
 * [Mind your Ps and Qs](https://github.com/tiphergane/PicoCTF2021/tree/main/Mind%20your%20Ps%20and%20Qs_RESOLU)
 
 # Web Exploitation
