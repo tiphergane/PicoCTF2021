@@ -14,3 +14,14 @@ echo "cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_MAZyqFQj}" | rot13
 
 >picoCTF{next_time_I'll_try_2_rounds_of_rot13_ZNMldSDw}
 
+## 0x3 Bonus
+
+Pour les utilisateurs de VIM, la solution peut être trouvée avec la commande suivante:
+
+Pour la ligne complète:
+
+>g??
+
+Pour une selection visuelle:
+
+>[selection visuel]g?
