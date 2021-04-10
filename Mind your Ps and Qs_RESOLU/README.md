@@ -53,6 +53,12 @@ et finalement utiliser la clef privée pour déchiffrer le message:
 
 ![formula](https://render.githubusercontent.com/render/math?math=m=c^dmod%28n%29)
 
+ou avec ChatonCTF:
+
+```python3
+chatonCTF.rsaUncipherMessage(c,d,n)
+```
+
 ## 0x5 : Passage du message déchiffré en lisible
 
 Bon, le message trouvé n'est pas très lisible comme cela, il faut l'avouer,
