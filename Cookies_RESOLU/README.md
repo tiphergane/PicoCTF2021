@@ -67,5 +67,7 @@ def Exploit():
                     pwn.success("Flag is: {}".format(f))
                     break
                 return
-Exploit()
+
+if __name__ == "__main__":
+    Exploit()
 ```
